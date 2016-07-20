@@ -8,3 +8,15 @@ For example, FindTwoSum(new List() { 1, 3, 5, 7, 9 }, 12) should return any of t
 3, 2 (7 + 5 = 12)
 4, 1 (9 + 3 = 12)
 ```
+
+```
+        public static Tuple<int, int> FindTwoSum(List<int> list, int sum)
+        {
+            throw new NotImplementedException();
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine(FindTwoSum(new List<int> {1, 3, 5, 7, 9}, 12));
+        }
+```
