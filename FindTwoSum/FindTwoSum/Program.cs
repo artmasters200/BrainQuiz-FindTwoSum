@@ -33,6 +33,27 @@ namespace FindTwoSum
             return null;
         }
 
+	public static Tuple<int,int> FindTwoSum2(List<int> list, int sum)
+	{
+		int a = 0;
+		int z = 0;
+			
+		foreach(int x in list)
+		{
+			int y = sum - x;
+			int index1 = list.IndexOf(x);
+			int index2 = list.IndexOf(y);
+			
+			
+			a = index1;
+			z = index2;
+
+		}
+		
+		return new Tuple<int,int>(a,z);
+		
+	}
+
         public static Tuple<int, int> FindTwoSumSlowest(IList<int> list, int sum)
         {
             for (int i = 0; i < list.Count; i++)
